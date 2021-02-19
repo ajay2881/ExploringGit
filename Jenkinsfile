@@ -10,14 +10,14 @@ node {
     }
     stage('UAT Deployment') {
 	if (env.BRANCH_NAME == "uat") { 
-            echo 'Dev Deployment'
+            echo 'uat Deployment'
         }
         
     }
     stage('Prod Deployment') {
         
 	if (env.BRANCH_NAME == "master") { 
-            echo 'Dev Deployment'
+            echo 'prod Deployment'
         }
         
     }
