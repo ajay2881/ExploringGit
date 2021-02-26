@@ -7,7 +7,7 @@ __stdcall void hello(const char *s)
 }
 int Double(int x, int y)
 {
-        return 3 + x;
+        print x;
 }
 void CppFunc(void)
 {
