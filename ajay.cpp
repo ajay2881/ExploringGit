@@ -5,10 +5,7 @@ __stdcall void hello(const char *s)
 {
         printf("Hello from roopendra %s\n", s);
 }
-int Double(int x)
-{
-        return 3 * x;
-}
+
 void CppFunc(void)
 {
         puts("CppFunc");
