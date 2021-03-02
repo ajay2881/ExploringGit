@@ -22,7 +22,7 @@ node {
 	if (env.BRANCH_NAME == "master") { 
 		
 		    println(final_url)
-		mail bcc: '', body: 'Please go to - ${env.final_url} to approve or Reject the deployment.', cc: 'ajay2881@gmail.com', from: '', replyTo: '', subject: 'please approve the prod deployment', to: 'ajay.chouhan@yash.com'
+		mail bcc: '', body: 'Please go to the link to approve or Reject the deployment-'+final_url, cc: 'ajay2881@gmail.com', from: '', replyTo: '', subject: 'please approve the prod deployment', to: 'ajay.chouhan@yash.com'
 		 input "Deploy to prod?"
 		
             echo 'prod Deployment'
