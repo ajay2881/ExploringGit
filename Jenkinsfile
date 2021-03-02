@@ -18,7 +18,7 @@ node {
         
 	if (env.BRANCH_NAME == "master") { 
 		
-		mail bcc: '', body: 'approve or reject the prod deployment', cc: 'ajay2881@gmail.com', from: '', replyTo: '', subject: 'please approve the prod deployment', to: 'ajay.chouhan@yash.com'
+		mail bcc: '', body: 'Please go to console output of ${env.BUILD_URL} to approve or Reject.', cc: 'ajay2881@gmail.com', from: '', replyTo: '', subject: 'please approve the prod deployment', to: 'ajay.chouhan@yash.com'
 		 input "Deploy to prod?"
 		
             echo 'prod Deployment'
