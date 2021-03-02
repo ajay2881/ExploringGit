@@ -17,8 +17,9 @@ node {
     stage('Prod Deployment') {
         
 	if (env.BRANCH_NAME == "master") { 
-		 input "Deploy to prod?"
+		
 		mail bcc: '', body: 'approve or reject the prod deployment', cc: 'ajay2881@gmail.com', from: '', replyTo: '', subject: 'please approve the prod deployment', to: 'ajay.chouhan@yash.com'
+		 input "Deploy to prod?"
 		
             echo 'prod Deployment'
         }
