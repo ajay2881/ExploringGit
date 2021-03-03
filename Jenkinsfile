@@ -25,7 +25,7 @@ node {
 	if (env.BRANCH_NAME == "master") { 
 		
 		    println(jenkins_url)
-		mail bcc: '', body: '''<a href='${env.BUILD_URL}'>${env.JOB_NAME} [${env.BUILD_NUMBER}]</a>, cc: '', from: '', replyTo: '', subject: 'test', to: 'gaurav007869@gmail.com'
+		mail bcc: '', body: "Please go to ${env.BUILD_URL}.", cc: '', from: '', replyTo: '', subject: 'test', to: 'gaurav007869@gmail.com'
 		 input "Deploy to prod?"
 		
             echo 'prod Deployment'
