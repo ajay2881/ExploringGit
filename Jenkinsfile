@@ -24,7 +24,7 @@ node {
 	if (env.BRANCH_NAME == "master") { 
 		
 		    println(jenkins_url)
-		mail bcc: '', body: email_body, cc: 'ajay2881@gmail.com', from: '',  mimeType: 'html', replyTo: '', subject: 'please approve the prod deployment', to: 'ajay.chouhan@yash.com'
+		mail bcc: '', body: 'Please click <a href="www.google.co.in">hello</a>', cc: '', from: '', mimeType: 'html', replyTo: '', subject: 'test', to: 'ajay2881@gmail.com'
 		 input "Deploy to prod?"
 		
             echo 'prod Deployment'
