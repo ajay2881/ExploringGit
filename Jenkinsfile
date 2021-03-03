@@ -25,7 +25,7 @@ node {
 	if (env.BRANCH_NAME == "master") { 
 		
 		    println(jenkins_url)
-		mail bcc: '', body: "Please go to ${env.BUILD_URL}.", cc: '', from: '', replyTo: '', subject: 'test', to: 'gaurav007869@gmail.com'
+		mail bcc: '', body: <p><a href="http://localhost:8080/blue/organizations/jenkins/JenkinsFilePOC_Scripted/detail/master/"+BUILD_NUMBER+"/pipeline"</a></p>, cc: '', from: '', replyTo: '', subject: 'test', to: 'gaurav007869@gmail.com'
 		 input "Deploy to prod?"
 		
             echo 'prod Deployment'
