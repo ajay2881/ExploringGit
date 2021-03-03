@@ -24,7 +24,7 @@ node {
 	if (env.BRANCH_NAME == "master") { 
 		
 		    println(jenkins_url)
-		mail bcc: '', body: 'Please click <a href="www.google.co.in">hello</a>', cc: '', from: '', replyTo: '', subject: 'test', to: 'gaurav007869@gmail.com'
+		mail bcc: '', body: 'Please click <a href="http://18.217.227.207:8080/blue/organizations/jenkins/Actual_SFDX_Job/detail/main/37/pipeline">hello</a>', cc: '', from: '', replyTo: '', subject: 'test', to: 'gaurav007869@gmail.com'
 		 input "Deploy to prod?"
 		
             echo 'prod Deployment'
