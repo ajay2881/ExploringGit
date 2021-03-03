@@ -4,7 +4,8 @@ node {
 	def BUILD_NUMBER=env.BUILD_NUMBER
     def jenkins_url="http://localhost:8080/blue/organizations/jenkins/JenkinsFilePOC_Scripted/detail/master/"+BUILD_NUMBER+"/pipeline"
 	//def final_url=jenkins_url+BUILD_NUMBER+"/pipeline"
-	    def email_body="Please"+"<a href=final_url>Approve or Reject</a>"+"the prod deployment"
+	def email_body="Please <a href=${jenkins_url}>Approve or Reject</a"+"the prod deployment"
+	
     stage('Dev Deployment') {
 	
 	if (env.BRANCH_NAME == "dev") { 
