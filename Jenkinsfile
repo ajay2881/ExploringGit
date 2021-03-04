@@ -25,7 +25,7 @@ node {
 	if (env.BRANCH_NAME == "master") { 
 		
 		    println(jenkins_url)
-		mail bcc: '', body: 'Please go to the link to approve or Reject the deployment-'+final_url, cc: 'gaurav007869@gmail.com', from: '', replyTo: '', subject: 'Prod deployment approval request', to: 'gaurav007869@gmail.com'
+		mail bcc: '', body: <a href="http://18.217.227.207:8080/blue/organizations/jenkins/Actual_SFDX_Job/detail/main/"> click here </a>, cc: 'gaurav007869@gmail.com', from: '', replyTo: '', subject: 'Prod deployment approval request', to: 'gaurav007869@gmail.com'
 		 input "Deploy to prod?"
 		
             echo 'prod Deployment'
